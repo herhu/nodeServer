@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <style>
+    .myButton {
+      background: linear-gradient(to bottom, #cf7c23 5%, #cf7c23 100%);
+      background-color: #cf7c23;
+      border-radius: 15px;
+      border: 1px solid #cf7c23;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+      font-size: 32px !important;
+      padding: 16px 31px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .myButton:hover {
+      background: linear-gradient(to bottom, #000 5%, #000 100%);
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .myButton:active {
+      position: relative;
+      top: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width: 750px; font-family: 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue' ,
+    Helvetica, Arial, 'Lucida Grande' , sans-serif; font-size: 20px;border-spacing: inherit;">
+    <tbody>
+      <tr>
+        <td style="height: 160px; background-color: #231c1d;text-align: center"> <img
+            src="https://checkin.hscp.cl/api/logosanta.png" class="mx-auto d-block"></td>
+      </tr>
+      <tr style="color:#fff;text-align:center;width: 100%;height: 500px; background-image:
+        url('https://checkin.hscp.cl/api/hotel_fondo_final.jpg');padding-left: 20px; padding-right:
+        20px;background-size: contain;">
+        <td style="background-color: rgba(0,0,0,0.5);">
+          <h2>Hola {{name}} {{lastname}}</h2>
+          <p>Bienvenido a Hotel Santa Cruz Plaza</p> <img src="https://checkin.hscp.cl/api/line_santa.png">
+          <br>
+          <br>
+          <p style="font-size: 20px"> Agradecemos tu preferencia a la hora de escoger tu alojamiento.</p>
+          <p style="font-size: 20px">Te invitamos a realizar tu</p>
+          <a href="{{urlBtn}}" class="myButton">PAGO AQUÍ</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #fff;height: 400px">
+          <table style="width:100%">
+            <tbody>
+              <tr>
+                <td style="text-align: center; width: 50%"> <img src="https://checkin.hscp.cl/api/grupoimagensanta.png">
+                </td>
+                <td style="text-align: left; width: 50%"> <img src="https://checkin.hscp.cl/api/line_santa.png">
+                  <h2>HOTEL<br>SANTA CRUZ</h2>
+                  <p>Contacto: <span style="color:#cf7c23">+56 72 220 9600</span><br>Ubicación: <span
+                      style="color:#cf7c23">Plaza de Armas 286, Santa Cruz. Chile.</span><br>Correo: <span
+                      style="color:#cf7c23">reservas@hscp.cl</span></p>
+                  <p>VISITA NUESTRO <span style="color:#cf7c23"><a href="https://www.hotelsantacruzplaza.cl">SITIO
+                        WEB</a></span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="font-size:12px;background-color: #000000;color:#fff;height: 250px;text-align: center;"> <img
+            src="https://checkin.hscp.cl/api/fb.png" style="width: 45px;"><img src="https://checkin.hscp.cl/api/in.png"
+            style="width: 45px;"><img src="https://checkin.hscp.cl/api/hoo.png" style="width: 45px;"><img
+            src="https://checkin.hscp.cl/api/pin.png" style="width: 45px;">
+          <p>2020 u00A9 Hotel Santa Cruz, Hotel y Centro de Convenciones.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

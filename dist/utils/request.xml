@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://webservices.micros.com/og/4.3/Common/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:r="http://webservices.micros.com/og/4.3/Reservation/" xmlns:hc="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:n="http://webservices.micros.com/og/4.3/Name/">
+    <soap:Header>
+        <OGHeader transactionID="" primaryLangID="" timeStamp="2020-04-07T16:22:12.799Z" channelValidation="false" terminalID="OWSSERVER1" xmlns="http://webservices.micros.com/og/4.3/Core/">
+            <Origin entityID="OWS" systemType="WEB"/>
+            <Destination entityID="CHA" systemType="PMS"/>
+            <Authentication>
+                <UserCredentials>
+                    <UserName>IFC</UserName>
+                    <UserPassword>HOTEL1234</UserPassword>
+                    <Domain>HTSCR</Domain>
+                </UserCredentials>
+            </Authentication>
+        </OGHeader>
+    </soap:Header>
+    <soap:Body>
+        <MakePaymentRequest xmlns="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:com="http://webservices.micros.com/og/4.3/Common/">
+            <Posting PostDate="2021-11-18-01:30" ShortInfo="321654" LongInfo="1234" Charge="5000" StationID="USERW764Dxyz.FT.MICROS.COM.37" UserID="IFCHSCR" FolioViewNo="2">
+                <ReservationRequestBase>
+                    <HotelReference chainCode="CHA" hotelCode="HTSCR"/>
+                    <ReservationID>
+                        <com:UniqueID type="INTERNAL" source="RESV_NAME_ID">85499</com:UniqueID>
+                    </ReservationID>
+                </ReservationRequestBase>
+            </Posting>
+            <CreditCardInfo>
+                <CreditCard cardType="VI">
+                    <com:cardHolderName>Jane Smith OWS</com:cardHolderName>
+                    <com:cardNumber>4147202301961890</com:cardNumber>
+                    <com:expirationDate>2024-06-30</com:expirationDate>
+                </CreditCard>
+            </CreditCardInfo>
+        </MakePaymentRequest>
+    </soap:Body>
+</soap:Envelope>

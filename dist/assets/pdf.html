@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pdf.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="logo">
+            <!-- logo -->
+            <img src="{{logo}}" class="image" width="15%" height="auto">
+        </div>
+
+        <div class="title">
+            <b> Comprobante de pago</b>
+        </div>
+
+        <div class="info">
+            <br>
+            <span><b>Hotel:</b> &nbsp; Santa Cruz Plaza</span>
+            <br>
+            <span><b>Nombre del Huésped:</b> &nbsp; {{guestName}}</span>
+            <br>
+            <span><b>Llegada:</b> &nbsp; {{checkIn}}</span>
+            <br>
+            <span><b>Salida:</b> &nbsp; {{checkOut}}</span>
+            <br>
+            <span><b>Conf. Number: &nbsp; </b>{{conf}}</span>
+            <br>
+            <span><b>Tipo de habitación:</b> &nbsp; {{roomType}}</span>
+            <br>
+            <span><b>Política:</b> &nbsp; No Reembolsable</span>
+            <br>
+            <span><b>Medio de Pago:</b> &nbsp; WEBPAY</span>
+            <br>
+            <span><b>Tipo de Pago:</b> &nbsp; {{paymentType}}</span>
+            <br>
+            <span><b>Cuatro últimos dígitos de la tarjeta:</b> &nbsp; xxxx{{cardNumber}}</span>
+            <br>
+            <span><b>Orden Compra:</b> &nbsp; {{buyOrder}}</span>
+            <br>
+            <span><b>Código de Autorización:</b> &nbsp; {{authorizationCode}}</span>
+            <br>
+            <span><b>Fecha de Pago:</b> &nbsp; {{transactionDate}}</span>
+            <br>
+            <span><b>Total:</b> &nbsp; ${{amount}}</span>
+        </div>
+        <footer>
+            <hr class="solid">
+            <p>
+                No se realizan devoluciones, ni reembolsos. En caso de tener alguna duda favor contactar a nuestro
+                departamento de reservas llamando desde su teléfono al + 56 72 220 9600 o escribanos al correo
+                reservas@hscp.cl</p>
+        </footer>
+    </div>
+</body>
+
+</html>
