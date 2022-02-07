@@ -1,2 +1,4 @@
 /node_modules
 /dist/files
+/dist/production.env
+/dist/development.env
